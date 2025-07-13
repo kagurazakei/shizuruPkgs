@@ -83,7 +83,7 @@ inputs.shizuruPkgs.url = "github:maotseantonio/shizuruPkgs";
 ## 🎖️ Credits
 
 Thanks to these amazing projects and contributors for inspiration and code. The kofi link is not mine for the original creator:
-- **Akrata-icon-theme by [Akr4ta](https://github.com/Akr4ta/akrata-icon-theme.git)
+- **Akrata-icon-theme** by [Akr4ta](https://github.com/Akr4ta/akrata-icon-theme.git)
 - **Houdoku(Manga Reader)** by [xgi](https://github.com/xgi/houdoku)  
 - **Catppuccin Icons** by [ljmill](https://github.com/ljmill/catppuccin-icons)  
 - **sddm-stray** by [Bqrry4](https://github.com/Bqrry4/sddm-stray)  
