@@ -1,22 +1,24 @@
 {
+  stdenv,
   lib,
-  buildNimPackage,
-  fetchFromGitHub,
 }:
-buildNimPackage rec {
+stdenv.mkDerivation rec {
   pname = "nitch";
-  version = "0.1.6";
-  src = fetchFromGitHub {
-    owner = "maotseantonio";
-    repo = "nitch";
-    rev = "v${version}";
-    sha256 = "PZpS3rPiPm+IRZpFXR9mUMEyzc5z421FEChAB3r87gc=";
-  };
+  version = "1.0.0"; # or whatever version you want
+
+  src = ./.;
+
+  installPhase = ''
+    mkdir -p $out/bin
+    cp nitch $out/bin/nitch
+    chmod +x $out/bin/nitch
+  '';
+
   meta = with lib; {
-    description = "Incredibly fast system fetch written in nim";
-    homepage = "https://github.com/maotseantonio/nitch";
-    license = licenses.mit;
+    description = "Simple system info tool";
+    homepage = "https://github.com/ssleert/nitch.git"; # optional
+    license = licenses.mit; # update to correct license if needed
+    maintainers = with maintainers; [kagurazakei]; # optional
     platforms = platforms.linux;
-    mainProgram = "nitch";
   };
 }
