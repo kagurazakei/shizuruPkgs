@@ -1,15 +1,14 @@
-{ pkgs ? import <nixpkgs> {} }:
-
+{pkgs ? import <nixpkgs> {}}:
 pkgs.stdenv.mkDerivation {
   pname = "kureiji-ollie-cursor";
   version = "v2";
 
   src = pkgs.fetchFromGitHub {
-      owner = "maotseantonio";
-      repo = "Kureiji-Ollie-Cursors";
-      rev = "a74edd1054b1fa1334e54276c9163ab69e7293f0";
-      hash = "sha256-IXrG0LgO62UXtHsLHTzV03IBVm/gUw1iY0T4NlW67k0=";
-   };
+    owner = "kagurazakei";
+    repo = "kureiji-ollie-cursors";
+    rev = "a68837f6fb2bf30efb12b62f395e9897384cb9db";
+    hash = "sha256-LzXB+FwaIsaO76Iv+rcnrNx4YiUpSzLxJvuKU83MMGA=";
+  };
 
   installPhase = ''
     mkdir -p $out/share/icons
@@ -23,5 +22,3 @@ pkgs.stdenv.mkDerivation {
     platforms = platforms.all;
   };
 }
-
-

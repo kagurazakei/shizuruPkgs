@@ -9,11 +9,12 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   version = "0.1.0";
 
   src = fetchFromGitHub {
-    owner = "maotseantonio";
+    owner = "kagurazakei";
     repo = "rxfetch";
-    rev = "99b598ff81f722159c187ac996d11c34673778ff";
+    rev = "8afde062e58be0b318e3823b9ee5e61a8f4f328d";
     hash = "sha256-Aw3UOQfk0mluMhv8WwxUj+TAHVBWzaTpZpZe281A4k0=";
-   };
+  };
+
   dontUnpack = true;
   dontConfigure = true;
   dontBuild = true;
