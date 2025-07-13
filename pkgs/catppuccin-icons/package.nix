@@ -6,8 +6,8 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchFromGitHub {
     owner = "kagurazakei";
     repo = "Catppuccin-SE";
-    rev = "4b6b4141300deb9969dc6ab25aaad29430f2439b";
-    hash = "sha256-qeC9nZgWTGollQSHz8uuz5K/g2BgHOkjF5QPEZe4er0=";
+    rev = "4552dcc48544da2f08bf37e7b64f1c3a3322707c";
+    hash = "sha256-8liUy6faUy9i/M1A/DGX/y82gO2l+Bx76Z3UXEMauM4=";
   };
 
   installPhase = ''
