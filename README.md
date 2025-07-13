@@ -31,7 +31,7 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 | 💻 **Houdoku**            | Houdoku Manga Reader —  Appimage Version        | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)           |
 | 📟 **rxfetch**                 | Fast, minimal system fetch with style                | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/mngshm/rxfetch.git)                |
 | 🌿 **nitch**                   | Minimal Nix-based system information fetch tool      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/ssleert/nitch.git)                  |
-| 🌿 **Akrata-Icon**                   | Icons theme focus on Beauty comination      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/Akr4ta/akrata-icon-theme.git)                  |
+| 🌿 **Akrata-Icon**                   | Icons theme focus on Beauty and Aesthetic      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/Akr4ta/akrata-icon-theme.git)                  |
 ---
 ## 🖼️ Showcase (Rice Photos)
 
