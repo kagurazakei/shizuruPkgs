@@ -1,6 +1,8 @@
-{ pkgs, lib, hyprland }:
-
 {
+  pkgs,
+  lib,
+  hyprland,
+}: {
   hyprscroller = import ./hyprscroller {
     inherit pkgs lib hyprland;
   };
@@ -20,7 +22,7 @@
     inherit pkgs lib;
   };
   rxfetch = import ./rxfetch {
-     inherit pkgs lib;
+    inherit pkgs lib;
   };
   gtk-themes = import ./gtk-themes {
     inherit pkgs lib;
@@ -35,4 +37,20 @@
     inherit pkgs lib;
   };
 
+  glassy-icons = import ./glassy-icons {
+    inherit pkgs lib;
+  };
+  cyberpunk-icons = import ./cyberpunk-icons {
+    inherit pkgs lib;
+  };
+  reversal-icons = import ./reversal-icons {
+    inherit pkgs lib;
+  };
+  inverse-icons = import ./inverse-icons {
+    inherit pkgs lib;
+  };
+
+  sours-icons = import ./sours-icons {
+    inherit pkgs lib;
+  };
 }
