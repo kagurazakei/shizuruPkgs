@@ -53,4 +53,8 @@
   sours-icons = import ./sours-icons {
     inherit pkgs lib;
   };
+
+  akrata-icons = import ./akrata-icons {
+    inherit pkgs lib;
+  };
 }
