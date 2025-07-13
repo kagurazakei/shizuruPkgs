@@ -34,4 +34,5 @@
   idle-inhibit = import ./idle-inhibit {
     inherit pkgs lib;
   };
+
 }
