@@ -57,4 +57,11 @@
   akrata-icons = import ./akrata-icons {
     inherit pkgs lib;
   };
+  BeautyLine = import ./BeautyLine {
+    inherit pkgs lib;
+  };
+
+  mangayomi = import ./mangayomi {
+    inherit pkgs lib;
+  };
 }
