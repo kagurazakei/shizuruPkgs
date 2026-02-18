@@ -8,16 +8,26 @@
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, flake-utils, hyprland, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      hyprland,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs { inherit system; };
         lib = pkgs.lib;
         packages = import ./pkgs {
           inherit pkgs lib;
-          hyprland = hyprland.packages.${system}.hyprland;
+          hyprland = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
         };
-      in {
+      in
+      {
         packages = packages;
-      });
+      }
+    );
 }
